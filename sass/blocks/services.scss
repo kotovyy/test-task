@@ -1,0 +1,22 @@
+.services {
+	margin-bottom: 45px;
+
+	&__intro {
+		font-family: "ProximaNova-Bold", Arial, sans-serif;
+	}
+
+	&__list {
+		margin: 35px 0 35px 218px;
+		padding: 0;
+		list-style: none;
+		max-width: 625px;
+		column-count: 2;
+	}
+
+	&__add {
+		font-size: 16px;
+		line-height: 20px;
+		color: #000;
+	}
+}
+

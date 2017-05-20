@@ -1,0 +1,62 @@
+@font-face {
+	font-weight: normal;
+	font-family: "ProximaNova-Regular";
+	font-style: normal;
+
+	src: url('../fonts/2DDB41_5_0.eot') format('embedded-opentype'),
+    url('../fonts/2DDB41_5_0.woff') format('woff'),
+    url('../fonts/2DDB41_5_0.ttf') format('woff2'),
+    url('../fonts/2DDB41_5_0.woff2') format('truetype')
+}
+
+@font-face {
+	font-weight: normal;
+	font-family: "ProximaNova-Bold";
+	font-style: normal;
+
+	src: url('../fonts/2DDB41_3_0.eot') format('embedded-opentype'),
+    url('../fonts/2DDB41_3_0.woff') format('woff'),
+    url('../fonts/2DDB41_3_0.ttf') format('woff2'),
+    url('../fonts/2DDB41_3_0.woff2') format('truetype')
+}
+
+.main {
+	padding: 80px 3%;
+	max-width: 1440px;
+}
+
+.main__container {
+	max-width: 981px;
+}
+
+.main-item {
+	font-size: 16px;
+	line-height: 20px;
+	color: #777777;
+	position: relative;
+
+	&::before {
+		content: "";
+		width: 14px;
+		border-bottom: 1px solid #8a8d93;
+		position: absolute;
+		top: 9px;
+		left: -1px;
+	}
+
+	&::after {
+		content: ";";
+	}
+
+	&--services {
+		padding: 0 0 8px 27px;
+
+		&:nth-child(3n+3) {
+			padding-bottom: 0;
+		}
+	}
+
+	&--using {
+		padding: 0 0 9px 27px;
+	}
+}
