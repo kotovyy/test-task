@@ -1,0 +1,125 @@
+.reviews {
+	margin-bottom: 146px;
+
+	&__title {
+		color: #000;
+		font-family: "ProximaNova-Bold", Arial, sans-serif;
+		margin-bottom: 40px;
+	}
+
+	&__img {
+		width: 109px;
+		height: 109px;
+		border-radius: 50%;
+		background: #efefef url(../img/people.png) no-repeat -4px 13px;
+	}
+
+	&__origin {
+		@include text-style;
+		border-bottom: 1px solid #ccc;
+		cursor: pointer;
+	}
+
+	&__wrapper {
+		@include flexbox(flex-start);
+	}
+
+	&__info {
+		margin-left: 80px;
+	}
+
+	&__item {
+		@include flexbox(flex-start);
+		max-width: 844px;
+		display: none;
+
+		&:nth-of-type(n+2) {
+			display: none;
+		}
+	}
+
+	&__text {
+		max-width: 654px;
+		@include text-style;
+	}
+}
+
+.slider-nav {
+	font-size: 0;
+	text-align: center;
+	@include flexbox(flex-start);
+
+	&__wrapper {
+		@include flexbox(center);
+		max-width: 654px;
+		margin-left: 190px;
+
+		&--steps {
+			margin: 35px 0 0 0;
+			justify-content: flex-end;
+		}
+	}
+
+	&__switcher {
+		padding: 54px 0;
+		color: #202020;
+		font-size: 16px;
+		line-height: 20px;
+		position: relative;
+
+		&::before {
+			content: url(../img/arrow-up.png);
+			width: 16px;
+			height: 8px;
+			position: absolute;
+			top: -2px;
+			left: 8px;
+			cursor: pointer;
+		}
+
+		&::after {
+			content: url(../img/arrow-down.png);
+			width: 16px;
+			height: 8px;
+			position: absolute;
+			top: 108px;
+			left: 8px;
+			cursor: pointer;
+		}
+
+		&--step {
+			margin-left: 15px;
+		}
+	}
+}
+
+.slider-nav__btn {
+	position: relative;
+	width: 5px;
+	height: 5px;
+	margin: 0 4px;
+	background-color: #efefef;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+}
+
+.slider-nav__btn--active {
+	background-color: #000;
+}
+
+.reviews__items input[type="radio"] {
+    display: none;
+}
+
+#reviews-radio-1:checked ~ .reviews__item--first,
+#reviews-radio-2:checked ~ .reviews__item--second,
+#reviews-radio-3:checked ~ .reviews__item--third {
+	display: flex;
+}
+
+#reviews-radio-1:checked ~ .slider-nav__wrapper .slider-nav label[for="reviews-radio-1"],
+#reviews-radio-2:checked ~ .slider-nav__wrapper .slider-nav label[for="reviews-radio-2"],
+#reviews-radio-3:checked ~ .slider-nav__wrapper .slider-nav label[for="reviews-radio-3"] {
+	background-color: #000;
+}
