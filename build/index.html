@@ -10,7 +10,7 @@
 		<main class="main__container">
 			<div class="general">
 				<h1 class="general__title">Digital production</h1>
-				<p class="general__descr">Сайт — это главный помощник компании и самостоятельнй бизнес-инструмент. Мы создаем сайты, которые работают и приносят прибыль. В Brandivision сайты строятся под конкретные задачи и цели, и именно поэтому они достигают их. </p>
+				<p class="general__descr">Сайт — это главный помощник компании и самостоятельный бизнес-инструмент. Мы создаем сайты, которые работают и приносят прибыль. В Brandivision сайты строятся под конкретные задачи и цели, и именно поэтому они достигают их. </p>
 			</div>
 			<div class="services">
 				<h4 class="services__intro">Мы способны реализовать следующие типы проектов: </h4>
@@ -36,59 +36,89 @@
 					<div class="description__scheme">
 						<div class="description__scheme-wrapper">
 							<div class="description__row">
-								<div class="description__stage">Брифинг, интервью (выяснение потребностей бизнеса клиента)</div>
+								<div class="description__stage description__stage--brif">Брифинг, интервью <span>(выяснение потребностей бизнеса клиента)</span></div>
 							</div>
 							<div class="description__row">
-								<div class="description__stage">Договор и техническое задание</div>
+								<div class="description__stage description__stage--deal">Договор и техническое задание</div>
 							</div>
 							<div class="description__row">
-								<div class="description__stage">Аналитика и проектирование</div>
+								<div class="description__stage description__stage--project">Аналитика и проектирование</div>
 							</div>
 							<div class="description__row">
-								<div class="description__stage">Дизайн</div>
+								<div class="description__stage description__stage--design">Дизайн</div>
 							</div>
 							<div class="description__row">
-								<div class="description__stage">HTML/CSS верстка</div>
+								<div class="description__stage description__stage--html">HTML/CSS верстка</div>
 							</div>
 							<div class="description__row">
-								<div class="description__stage">Программирование</div>
+								<div class="description__stage description__stage--code">Программирование</div>
+							</div>
+							<div class="description__row description__row--content">
+								<div class="description__stage description__stage--content">Контент <br><span>(написание текстов, подготовка изображений для публикации на сайте)</span></div>
+								<div class="description__stage description__stage--add">Наполнение контентом <br><span>(товарами, изображениями и текстами)</span></div>
+							</div>
+							<div class="description__row description__row--test">
+								<div class="description__stage description__stage--test">Тестирование</div>
 							</div>
 							<div class="description__row">
-								<div class="description__stage">Контент(написание текстов, подготовка изображений для публикации на сайте)</div>
-								<div class="description__stage">Наполнение контентом(товарами, изображениями и текстами)</div>
-							</div>
-							<div class="description__row">
-								<div class="description__stage">Тестирование</div>
-							</div>
-							<div class="description__row">
-								<div class="description__stage">Ведение проекта, консультации</div>
+								<div class="description__stage description__stage--consult">Ведение проекта, консультации</div>
 							</div>
 						</div>
 						<div class="description__notice">После запуска проекта мы предлагаем техническую и информационную поддержку для развития digital-проектов, производственный консалтинг, надзор и доставку конечного продукта</div>
-						<div class="description__pay">
-							<div class="description__pay-item">1й платеж</div>
-							<div class="description__pay-item">2й платеж</div>
-							<div class="description__pay-item">3й платеж</div>
-							<div class="description__pay-item">4й платеж</div>
-						</div>
 					</div>
-					<div class="description__steps">
-						<div class="description__steps-title">Этапы работ</div>
-						<div class="steps__common">
-							<h4 class="steps__name">01. Исследуем</h4>
-							<p class="steps__detail">Перед тем, как начать любую работу, мы анализируем ваш бизнес, узнаем основные ценности и бизнес процессы, определяем реальные потребности ваших клиентов. Не забудем и про ваших конкурентов. На основании данных, полученных в ходе интервью и заполнения брифа мы готовим наше предложение.</p>
-						</div>
-						<div class="steps__items">
-							<p class="steps__title">Работы на данном этапе</p>
-							<ul class="steps__list">
-								<li class="steps__item">Первичное интервью, заполнение брифа</li>
-								<li class="steps__item">Формирование требований и общего видения проекта</li>
-								<li class="steps__item">Составление сметы, подписание договора</li>
-							</ul>
+					<div class="description__pay">
+						<div class="description__pay-item description__pay-item--first">1й платеж</div>
+						<div class="description__pay-item description__pay-item--second">2й платеж</div>
+						<div class="description__pay-item description__pay-item--third">3й платеж</div>
+						<div class="description__pay-item">4й платеж</div>
+					</div>
+					<div class="steps">
+						<div class="steps__title">Этапы работ</div>
+						<div class="steps__main-wrapper">
+							<div class="slider-nav__switcher slider-nav__switcher--step">1 / 3</div>
+							<div class="reviews__items">
+								<div class="steps__items">
+									<input type="radio" name="step" id="step-radio-1" checked>
+									<input type="radio" name="step" id="step-radio-2">
+									<input type="radio" name="step" id="step-radio-3">
+									<div class="steps__item steps__item--first">
+										<h4 class="steps__name">01. Исследуем</h4>
+										<div class="steps__info">
+											<p class="steps__detail">Перед тем, как начать любую работу, мы анализируем ваш бизнес, узнаем основные ценности и бизнес процессы, определяем реальные потребности ваших клиентов. Не забудем и про ваших конкурентов. <br>На основании данных, полученных в ходе интервью и заполнения брифа мы готовим наше предложение.</p>
+										</div>	
+									</div>
+									<div class="steps__item steps__item--second">
+										<h4 class="steps__name">02. Второй этап</h4>
+										<div class="steps_info">
+											<p class="steps__detail">Перед тем, как начать любую работу, мы анализируем ваш бизнес, узнаем основные ценности и бизнес процессы, определяем реальные потребности ваших клиентов. Не забудем и про ваших конкурентов. <br>На основании данных, полученных в ходе интервью и заполнения брифа мы готовим наше предложение.</p>
+										</div>
+									</div>
+									<div class="steps__item steps__item--third">
+										<h4 class="steps__name">03. Третий этап</h4>
+										<div class="steps__info">
+											<p class="steps__detail">Перед тем, как начать любую работу, мы анализируем ваш бизнес, узнаем основные ценности и бизнес процессы, определяем реальные потребности ваших клиентов. Не забудем и про ваших конкурентов. <br>На основании данных, полученных в ходе интервью и заполнения брифа мы готовим наше предложение.</p>
+										</div>
+									</div>
+									<div class="slider-nav__wrapper slider-nav__wrapper--steps">
+										<div class="slider-nav">
+								            <label class="slider-nav__btn" for="step-radio-1">1</label>
+								            <label class="slider-nav__btn" for="step-radio-2">2</label>
+								            <label class="slider-nav__btn" for="step-radio-3">3</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="step__items">
+								<p class="step__list-name">Работы на данном этапе</p>
+								<ul class="step__list">
+									<li class="main-item main-item--step">Первичное интервью, заполнение брифа</li>
+									<li class="main-item main-item--step">Формирование требований и общего видения проекта</li>
+									<li class="main-item main-item--step">Составление сметы, подписание договора</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 			<div class="using">
 				<h2 class="using__title">Что используем.</h2>
 				<p class="using__intro">В своей работе мы пользуемся следующими инструментами и технологиями.</p>
@@ -135,15 +165,39 @@
 			</div>
 			<div class="reviews">
 				<h2 class="reviews__title">Наши клиенты о сотрудничестве с Brandivision.</h2>
-				<div class="reviews__item">
-					<div class="reviews__main">
-						<div class="reviews__img"></div>
-						<div class="reviews__info">
-							<p class="reviews__text">Перед тем, как начать любую работу, мы анализируем ваш бизнес, узнаем основные ценности и бизнес процессы, определяем реальные потребности ваших клиентов. Не забудем и про ваших конкурентов. </p>
+				<div class="reviews__wrapper">
+					<div class="reviews__items">
+						<input type="radio" name="reviews" id="reviews-radio-1" checked>
+						<input type="radio" name="reviews" id="reviews-radio-2">
+						<input type="radio" name="reviews" id="reviews-radio-3">
+						<div class="reviews__item reviews__item--first">
+							<div class="reviews__img"></div>
+							<div class="reviews__info">
+								<p class="reviews__text">Первый отзыв: Перед тем, как начать любую работу, мы анализируем ваш бизнес, узнаем основные ценности и бизнес процессы, определяем реальные потребности ваших клиентов. Не забудем и про ваших конкурентов. </p>
+							</div>	
 						</div>
-						<div class="reviews__origin">Оригинал отзыва</div>
+						<div class="reviews__item reviews__item--second">
+							<div class="reviews__img"></div>
+							<div class="reviews__info">
+								<p class="reviews__text">Второй отзыв: Перед тем, как начать любую работу, мы анализируем ваш бизнес, узнаем основные ценности и бизнес процессы, определяем реальные потребности ваших клиентов. Не забудем и про ваших конкурентов. </p>
+							</div>
+						</div>
+						<div class="reviews__item reviews__item--third">
+							<div class="reviews__img"></div>
+							<div class="reviews__info">
+								<p class="reviews__text">Третий отзыв: Перед тем, как начать любую работу, мы анализируем ваш бизнес, узнаем основные ценности и бизнес процессы, определяем реальные потребности ваших клиентов. Не забудем и про ваших конкурентов. </p>
+							</div>
+						</div>
+						<div class="slider-nav__wrapper">
+							<div class="slider-nav">
+					            <label class="slider-nav__btn" for="reviews-radio-1">1</label>
+					            <label class="slider-nav__btn" for="reviews-radio-2">2</label>
+					            <label class="slider-nav__btn" for="reviews-radio-3">3</label>
+							</div>
+							<div class="reviews__origin">Оригинал отзыва</div>
+						</div>
 					</div>
-					<div class="reviews__switch"></div>
+					<div class="slider-nav__switcher">1 / 3</div>
 				</div>
 			</div>
 			<div class="result">Мы разработаем вам сайт, который оправдает вложенные в него средства, повысит продажи и поможет рассказать о вас и вашей компании максимально широкой аудитории. </div>
